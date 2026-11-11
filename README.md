@@ -5,3 +5,5 @@ Disposable public fixture for live acceptance checks on
 safe to delete.
 
 `bin/greet NAME` prints a greeting. Run `bin/setup`, `bin/test`, and `bin/validate`.
+
+Operator preflight: this PR only qualifies seed CI; all merges are paused.
