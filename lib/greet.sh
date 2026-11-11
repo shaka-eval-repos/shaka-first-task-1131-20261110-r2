@@ -1,5 +1,10 @@
 #!/bin/sh
-# Prints a greeting for the given name.
+# Prints a greeting for the given name; --plain omits the exclamation point.
 greet() {
-  printf 'Hello, %s!\n' "${1:-world}"
+  if [ "${1:-}" = '--plain' ]; then
+    shift
+    printf 'Hello, %s\n' "${1:-world}"
+  else
+    printf 'Hello, %s!\n' "${1:-world}"
+  fi
 }
